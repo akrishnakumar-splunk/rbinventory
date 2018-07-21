@@ -9,14 +9,13 @@ The app will be installed on a Docker container (for isolation of dependencies) 
 As all the dependencies are mentioned in the `Dockerfile`, you need to build and run the container as:
 
 ```
-$ docker build -t rbinventory:latest
-$ docker run --name rbinventory_container -d -p 5000:5000 rbinventory
+$ make up
 ```
 
 In order to stop and remove the container,
 
 ```
-$ docker stop rbinventory_container && docker rm rbinventory_container
+$ make stop
 ```
 
 ## Maintainer
